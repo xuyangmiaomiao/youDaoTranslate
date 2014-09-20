@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 	/**
 	* 有道翻译API 二次封装 简化请求参数
@@ -50,7 +50,7 @@
 	isset($_GET['only']) ? $ONLY = $_GET['only'] : $ONLY = '';					// dict表示只获取词典数据，translate表示只获取翻译数据，默认为都获取
 	$TYPE = 'data'; 															// 返回结果的类型，固定为data
 	$VERSION = '1.1'; 															// 版本，当前最新版本为1.1
-	$APIKEY = '341860372';
-	$KEYFROM = 'baidudu';
+	$APIKEY = '';																// 填写你申请到的API KEY
+	$KEYFROM = '';																// 填写你申请到的KEYFROM
 	youDaoTranslate::index($APIKEY, $KEYFROM, $DOCTYPE, $TYPE, $VERSION, $ONLY, $Q);
 ?>
